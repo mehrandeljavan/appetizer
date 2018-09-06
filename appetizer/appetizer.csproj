@@ -1,0 +1,713 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{90F5DC13-4D66-402E-AFDD-832978F78CF9}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>appetizer</RootNamespace>
+    <AssemblyName>appetizer</AssemblyName>
+    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+    <UseIISExpress>true</UseIISExpress>
+    <IISExpressSSLPort />
+    <IISExpressAnonymousAuthentication />
+    <IISExpressWindowsAuthentication />
+    <IISExpressUseClassicPipelineMode />
+    <TargetFrameworkProfile />
+    <UseGlobalApplicationHostFile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <PlatformTarget>x86</PlatformTarget>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+    <Reference Include="System.Web.Mobile" />
+    <Reference Include="System.Xml.Linq" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="app_menu.ascx" />
+    <Content Include="Content\bootstrap\css\bootstrap-theme.css" />
+    <Content Include="Content\bootstrap\css\bootstrap-theme.min.css" />
+    <Content Include="Content\bootstrap\css\bootstrap.css" />
+    <Content Include="Content\bootstrap\css\bootstrap.min.css" />
+    <Content Include="Content\bootstrap\css\dashboard.css" />
+    <Content Include="Content\bootstrap\fonts\glyphicons-halflings-regular.svg" />
+    <Content Include="Content\bootstrap\js\bootstrap.js" />
+    <Content Include="Content\bootstrap\js\bootstrap.min.js" />
+    <Content Include="Content\bootstrap\js\npm.js" />
+    <Content Include="Content\css\jquery-ui.css" />
+    <Content Include="Content\css\master.css" />
+    <Content Include="Content\css\print.css" />
+    <Content Include="Content\css\Site.css" />
+    <Content Include="Content\Images\737556.gif" />
+    <Content Include="Content\Images\Header001.png" />
+    <Content Include="Content\Images\Header_blue.jpg" />
+    <Content Include="Content\Images\meeting.png" />
+    <Content Include="Content\js\jquery-1.11.2.js" />
+    <Content Include="Forms\BankAccounts.aspx" />
+    <Content Include="Forms\DeclarationBankAccounts.aspx" />
+    <Content Include="Forms\DossierUserAssignment.aspx" />
+    <Content Include="Forms\EditDead.aspx" />
+    <Content Include="Forms\first_page\css\component.css" />
+    <Content Include="Forms\first_page\css\demo.css" />
+    <Content Include="Forms\first_page\css\normalize.css" />
+    <Content Include="Forms\first_page\fonts\codropsicons\codropsicons.svg" />
+    <Content Include="Forms\first_page\fonts\codropsicons\license.txt" />
+    <Content Include="Forms\first_page\img\crop.svg" />
+    <Content Include="Forms\first_page\img\gridme.png" />
+    <Content Include="Forms\first_page\img\image.jpg" />
+    <Content Include="Forms\first_page\img\related\AnimatedHeaderBackgrounds.png" />
+    <Content Include="Forms\first_page\img\related\TexturedText.jpg" />
+    <Content Include="Forms\first_page\index.html" />
+    <Content Include="Forms\first_page\js\component.js" />
+    <Content Include="Forms\first_page\js\jquery-2.1.1.min.js" />
+    <Content Include="Forms\HeirCombination.aspx" />
+    <Content Include="Forms\PrintPages.aspx" />
+    <Content Include="Forms\SelectCurrentDossier.aspx" />
+    <Content Include="Index.aspx" />
+    <Content Include="Login.aspx" />
+    <Content Include="Scripts\jquery-1.7.1.intellisense.js" />
+    <Content Include="Scripts\jquery-1.7.1.js" />
+    <Content Include="Scripts\jquery-1.7.1.min.js" />
+    <Content Include="Content\js\jquery-ui.js" />
+    <Content Include="Web.config">
+      <SubType>Designer</SubType>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="App_Code\CommonPage.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="App_Code\IHierarchicalDataSet.cs" />
+    <Compile Include="app_menu.ascx.cs">
+      <DependentUpon>app_menu.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="app_menu.ascx.designer.cs">
+      <DependentUpon>app_menu.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="DBAccess\ActivitiesDBAccess.cs" />
+    <Compile Include="DBAccess\AdjustmentHeritageDBAccess.cs" />
+    <Compile Include="DBAccess\AgreementTypeDBAccess.cs" />
+    <Compile Include="DBAccess\AnnunciationDBAccess.cs" />
+    <Compile Include="DBAccess\AnnunciationPaperTypeDBAccess.cs" />
+    <Compile Include="DBAccess\AnnunciationPlaceDBAccess.cs" />
+    <Compile Include="DBAccess\AnnunciationResultTypeDBAccess.cs" />
+    <Compile Include="DBAccess\AnnunciationToOthersReasonDBAccess.cs" />
+    <Compile Include="DBAccess\AnnunciationToTypeDBAccess.cs" />
+    <Compile Include="DBAccess\ApplicantDBAccess.cs" />
+    <Compile Include="DBAccess\ApplicantRoleDBAccess.cs" />
+    <Compile Include="DBAccess\ApplicationsDBAccess.cs" />
+    <Compile Include="DBAccess\BankAccountTypeDBAccess.cs" />
+    <Compile Include="DBAccess\BankCategoryDBAccess.cs" />
+    <Compile Include="DBAccess\BankDBAccess.cs" />
+    <Compile Include="DBAccess\BankDepositDBAccess.cs" />
+    <Compile Include="DBAccess\BankDepositProfitDBAccess.cs" />
+    <Compile Include="DBAccess\BankInquiryHajjDBAccess.cs" />
+    <Compile Include="DBAccess\BankTypeDBAccess.cs" />
+    <Compile Include="DBAccess\BoolFieldsTitleDBAccess.cs" />
+    <Compile Include="DBAccess\BourseStockDBAccess.cs" />
+    <Compile Include="DBAccess\CalculationTypeDBAccess.cs" />
+    <Compile Include="DBAccess\CapitalAndCommodityDepositDBAccess.cs" />
+    <Compile Include="DBAccess\CarDBAccess.cs" />
+    <Compile Include="DBAccess\CityDBAccess.cs" />
+    <Compile Include="DBAccess\CommissionAdjustmentHeritageDBAccess.cs" />
+    <Compile Include="DBAccess\CommissionInvitationDBAccess.cs" />
+    <Compile Include="DBAccess\CommissionInvitationTypeDBAccess.cs" />
+    <Compile Include="DBAccess\CommissionTypeDBAccess.cs" />
+    <Compile Include="DBAccess\CommissionVerdictDBAccess.cs" />
+    <Compile Include="DBAccess\CommissionVerdictTypeDBAccess.cs" />
+    <Compile Include="DBAccess\CompanyTypeDBAccess.cs" />
+    <Compile Include="DBAccess\ConvertLogDBAccess.cs" />
+    <Compile Include="DBAccess\CostDBAccess.cs" />
+    <Compile Include="DBAccess\CostTypeDBAccess.cs" />
+    <Compile Include="DBAccess\DaysDBAccess.cs" />
+    <Compile Include="DBAccess\DeadDBAccess.cs" />
+    <Compile Include="DBAccess\DebtsDBAccess.cs" />
+    <Compile Include="DBAccess\DebtsTypeDBAccess.cs" />
+    <Compile Include="DBAccess\DeclarationDBAccess.cs" />
+    <Compile Include="DBAccess\DeclarationTypeDBAccess.cs" />
+    <Compile Include="DBAccess\DeliveryTypeDBAccess.cs" />
+    <Compile Include="DBAccess\DemandDocumentDBAccess.cs" />
+    <Compile Include="DBAccess\DemandsDBAccess.cs" />
+    <Compile Include="DBAccess\DemandsTypeDBAccess.cs" />
+    <Compile Include="DBAccess\DictionaryDBAccess.cs" />
+    <Compile Include="DBAccess\DossierCartableDBAccess.cs" />
+    <Compile Include="DBAccess\DossierDBAccess.cs" />
+    <Compile Include="DBAccess\DowryDBAccess.cs" />
+    <Compile Include="DBAccess\EducationStateDBAccess.cs" />
+    <Compile Include="DBAccess\EntityRuleDBAccess.cs" />
+    <Compile Include="DBAccess\EstateDBAccess.cs" />
+    <Compile Include="DBAccess\EstateTypeDBAccess.cs" />
+    <Compile Include="DBAccess\FinancialRightsDBAccess.cs" />
+    <Compile Include="DBAccess\Form19DBAccess.cs" />
+    <Compile Include="DBAccess\FormCommissionInvitationDBAccess.cs" />
+    <Compile Include="DBAccess\FormDeclarationDeliveryDBAccess.cs" />
+    <Compile Include="DBAccess\FormDeclarationInputInfoDBAccess.cs" />
+    <Compile Include="DBAccess\FormDeterministicPaperDBAccess.cs" />
+    <Compile Include="DBAccess\FormDiagnosisPaperBackDBAccess.cs" />
+    <Compile Include="DBAccess\FormDiagnosisPaperDBAccess.cs" />
+    <Compile Include="DBAccess\FormDiagnosisResultDBAccess.cs" />
+    <Compile Include="DBAccess\FormFreedomDBAccess.cs" />
+    <Compile Include="DBAccess\FormHeirWithShareDBAccess.cs" />
+    <Compile Include="DBAccess\FormHeritageBillDBAccess.cs" />
+    <Compile Include="DBAccess\FormHeritageEvaluationDBAccess.cs" />
+    <Compile Include="DBAccess\FormHeritageListDBAccess.cs" />
+    <Compile Include="DBAccess\FormHeritagesDescriptionsDBAccess.cs" />
+    <Compile Include="DBAccess\FormInquiryBankDepositDBAccess.cs" />
+    <Compile Include="DBAccess\FormInquiryCompanyDBAccess.cs" />
+    <Compile Include="DBAccess\FormInquiryEstateDBAccess.cs" />
+    <Compile Include="DBAccess\FormInquiryGoodWillEvaluationDBAccess.cs" />
+    <Compile Include="DBAccess\FormInquiryGoodWillScoreDBAccess.cs" />
+    <Compile Include="DBAccess\FormInquiryOtherDBAccess.cs" />
+    <Compile Include="DBAccess\FormInquiryResponseDBAccess.cs" />
+    <Compile Include="DBAccess\FormInquiryTransferRightEvaluationDBAccess.cs" />
+    <Compile Include="DBAccess\FormInquiryTransferRightScoreDBAccess.cs" />
+    <Compile Include="DBAccess\FormTaxBillDBAccess.cs" />
+    <Compile Include="DBAccess\FormTaxPaymentCertificateDBAccess.cs" />
+    <Compile Include="DBAccess\GenderDBAccess.cs" />
+    <Compile Include="DBAccess\HajjDBAccess.cs" />
+    <Compile Include="DBAccess\HajjTypeDBAccess.cs" />
+    <Compile Include="DBAccess\HeirDBAccess.cs" />
+    <Compile Include="DBAccess\HeirNumberDBAccess.cs" />
+    <Compile Include="DBAccess\HeritageDBAccess.cs" />
+    <Compile Include="DBAccess\HomeFurnishingsDBAccess.cs" />
+    <Compile Include="DBAccess\InquiryResponseDBAccess.cs" />
+    <Compile Include="DBAccess\JewelDBAccess.cs" />
+    <Compile Include="DBAccess\JusticeSharesDBAccess.cs" />
+    <Compile Include="DBAccess\LoggingDBAccess.cs" />
+    <Compile Include="DBAccess\LogTitlesDBAccess.cs" />
+    <Compile Include="DBAccess\MachineryDBAccess.cs" />
+    <Compile Include="DBAccess\MainOfficeDBAccess.cs" />
+    <Compile Include="DBAccess\MarriageDBAccess.cs" />
+    <Compile Include="DBAccess\MartyrProfReferenceDBAccess.cs" />
+    <Compile Include="DBAccess\NationalityDBAccess.cs" />
+    <Compile Include="DBAccess\OperatorTypeDBAccess.cs" />
+    <Compile Include="DBAccess\OtherDeductionsDBAccess.cs" />
+    <Compile Include="DBAccess\OtherPropertiesDBAccess.cs" />
+    <Compile Include="DBAccess\PartnershipPapersDBAccess.cs" />
+    <Compile Include="DBAccess\PartnershipPaperTypeDBAccess.cs" />
+    <Compile Include="DBAccess\PartTypeDBAccess.cs" />
+    <Compile Include="DBAccess\PaymentDBAccess.cs" />
+    <Compile Include="DBAccess\PermitDBAccess.cs" />
+    <Compile Include="DBAccess\PersonDBAccess.cs" />
+    <Compile Include="DBAccess\PhoneDBAccess.cs" />
+    <Compile Include="DBAccess\PhysicalDossierDeliveryDBAccess.cs" />
+    <Compile Include="DBAccess\PhysicalStateDBAccess.cs" />
+    <Compile Include="DBAccess\ProductionUnitDBAccess.cs" />
+    <Compile Include="DBAccess\ProductionUnitTypeDBAccess.cs" />
+    <Compile Include="DBAccess\PropertiesNumberDBAccess.cs" />
+    <Compile Include="DBAccess\PropertyInOtherCountryDBAccess.cs" />
+    <Compile Include="DBAccess\ProvinceDBAccess.cs" />
+    <Compile Include="DBAccess\QuestionDBAccess.cs" />
+    <Compile Include="DBAccess\QuestionScoreDBAccess.cs" />
+    <Compile Include="DBAccess\ReDiagnosisRequestDBAccess.cs" />
+    <Compile Include="DBAccess\RegisterInformationDBAccess.cs" />
+    <Compile Include="DBAccess\RegisterTypesDBAccess.cs" />
+    <Compile Include="DBAccess\RegularAnnunciationReasonDBAccess.cs" />
+    <Compile Include="DBAccess\RegularAnnunciationTypeDBAccess.cs" />
+    <Compile Include="DBAccess\RelationDBAccess.cs" />
+    <Compile Include="DBAccess\Religion_DinDBAccess.cs" />
+    <Compile Include="DBAccess\Religion_MazhabDBAccess.cs" />
+    <Compile Include="DBAccess\ReligiousDebtDBAccess.cs" />
+    <Compile Include="DBAccess\ReportsDBAccess.cs" />
+    <Compile Include="DBAccess\ReportTypeDBAccess.cs" />
+    <Compile Include="DBAccess\RequestDBAccess.cs" />
+    <Compile Include="DBAccess\RequestTypeDBAccess.cs" />
+    <Compile Include="DBAccess\ResidenceDBAccess.cs" />
+    <Compile Include="DBAccess\RolePartActivityDBAccess.cs" />
+    <Compile Include="DBAccess\RolePartDBAccess.cs" />
+    <Compile Include="DBAccess\RoleTypeDBAccess.cs" />
+    <Compile Include="DBAccess\SafeBoxDBAccess.cs" />
+    <Compile Include="DBAccess\ScoreDBAccess.cs" />
+    <Compile Include="DBAccess\ScoreTypeDBAccess.cs" />
+    <Compile Include="DBAccess\StockInOtherCompaniesDBAccess.cs" />
+    <Compile Include="DBAccess\StockProfitDBAccess.cs" />
+    <Compile Include="DBAccess\TaxOfficeDBAccess.cs" />
+    <Compile Include="DBAccess\TaxOfficeDossierAssignMethodDBAccess.cs" />
+    <Compile Include="DBAccess\TaxRatiosDBAccess.cs" />
+    <Compile Include="DBAccess\TransferRightDBAccess.cs" />
+    <Compile Include="DBAccess\TransferRightTypeDBAccess.cs" />
+    <Compile Include="DBAccess\TreeDBAccess.cs" />
+    <Compile Include="DBAccess\UserDBAccess.cs" />
+    <Compile Include="DBAccess\UserDossierDBAccess.cs" />
+    <Compile Include="DBAccess\UserTaxOfficeActivityRolePartDBAccess.cs" />
+    <Compile Include="DBAccess\UserTaxOfficeRolePartDBAccess.cs" />
+    <Compile Include="DBAccess\UttererDBAccess.cs" />
+    <Compile Include="DBAccess\UttererRoleDBAccess.cs" />
+    <Compile Include="DBAccess\WeddingIndexDBAccess.cs" />
+    <Compile Include="DBAccess\WeddingIndex_OldDBAccess.cs" />
+    <Compile Include="DBAccess\WellDBAccess.cs" />
+    <Compile Include="DBAccess\WellTypeDBAccess.cs" />
+    <Compile Include="DBAccess\WillDBAccess.cs" />
+    <Compile Include="DBAccess\WillTypeDBAccess.cs" />
+    <Compile Include="DBHelper\SqlDBHelper.cs" />
+    <Compile Include="Entities\Activities.cs" />
+    <Compile Include="Entities\AdjustmentHeritage.cs" />
+    <Compile Include="Entities\AgreementType.cs" />
+    <Compile Include="Entities\Annunciation.cs" />
+    <Compile Include="Entities\AnnunciationPaperType.cs" />
+    <Compile Include="Entities\AnnunciationPlace.cs" />
+    <Compile Include="Entities\AnnunciationResultType.cs" />
+    <Compile Include="Entities\AnnunciationToOthersReason.cs" />
+    <Compile Include="Entities\AnnunciationToType.cs" />
+    <Compile Include="Entities\Applicant.cs" />
+    <Compile Include="Entities\ApplicantRole.cs" />
+    <Compile Include="Entities\Applications.cs" />
+    <Compile Include="Entities\Bank.cs" />
+    <Compile Include="Entities\BankAccountType.cs" />
+    <Compile Include="Entities\BankCategory.cs" />
+    <Compile Include="Entities\BankDeposit.cs" />
+    <Compile Include="Entities\BankDepositProfit.cs" />
+    <Compile Include="Entities\BankInquiryHajj.cs" />
+    <Compile Include="Entities\BankType.cs" />
+    <Compile Include="Entities\BoolFieldsTitle.cs" />
+    <Compile Include="Entities\BourseStock.cs" />
+    <Compile Include="Entities\CalculationType.cs" />
+    <Compile Include="Entities\CapitalAndCommodityDeposit.cs" />
+    <Compile Include="Entities\Car.cs" />
+    <Compile Include="Entities\City.cs" />
+    <Compile Include="Entities\CommissionAdjustmentHeritage.cs" />
+    <Compile Include="Entities\CommissionInvitation.cs" />
+    <Compile Include="Entities\CommissionInvitationType.cs" />
+    <Compile Include="Entities\CommissionType.cs" />
+    <Compile Include="Entities\CommissionVerdict.cs" />
+    <Compile Include="Entities\CommissionVerdictType.cs" />
+    <Compile Include="Entities\CompanyType.cs" />
+    <Compile Include="Entities\ConvertLog.cs" />
+    <Compile Include="Entities\Cost.cs" />
+    <Compile Include="Entities\CostType.cs" />
+    <Compile Include="Entities\Days.cs" />
+    <Compile Include="Entities\Dead.cs" />
+    <Compile Include="Entities\Debts.cs" />
+    <Compile Include="Entities\DebtsType.cs" />
+    <Compile Include="Entities\Declaration.cs" />
+    <Compile Include="Entities\DeclarationType.cs" />
+    <Compile Include="Entities\DeliveryType.cs" />
+    <Compile Include="Entities\DemandDocument.cs" />
+    <Compile Include="Entities\Demands.cs" />
+    <Compile Include="Entities\DemandsType.cs" />
+    <Compile Include="Entities\Dictionary.cs" />
+    <Compile Include="Entities\Dossier.cs" />
+    <Compile Include="Entities\DossierCartable.cs" />
+    <Compile Include="Entities\Dowry.cs" />
+    <Compile Include="Entities\EducationState.cs" />
+    <Compile Include="Entities\EntityRule.cs" />
+    <Compile Include="Entities\Estate.cs" />
+    <Compile Include="Entities\EstateType.cs" />
+    <Compile Include="Entities\FinancialRights.cs" />
+    <Compile Include="Entities\Form19.cs" />
+    <Compile Include="Entities\FormCommissionInvitation.cs" />
+    <Compile Include="Entities\FormDeclarationDelivery.cs" />
+    <Compile Include="Entities\FormDeclarationInputInfo.cs" />
+    <Compile Include="Entities\FormDeterministicPaper.cs" />
+    <Compile Include="Entities\FormDiagnosisPaper.cs" />
+    <Compile Include="Entities\FormDiagnosisPaperBack.cs" />
+    <Compile Include="Entities\FormDiagnosisResult.cs" />
+    <Compile Include="Entities\FormFreedom.cs" />
+    <Compile Include="Entities\FormHeirWithShare.cs" />
+    <Compile Include="Entities\FormHeritageBill.cs" />
+    <Compile Include="Entities\FormHeritageEvaluation.cs" />
+    <Compile Include="Entities\FormHeritageList.cs" />
+    <Compile Include="Entities\FormHeritagesDescriptions.cs" />
+    <Compile Include="Entities\FormInquiryBankDeposit.cs" />
+    <Compile Include="Entities\FormInquiryCompany.cs" />
+    <Compile Include="Entities\FormInquiryEstate.cs" />
+    <Compile Include="Entities\FormInquiryGoodWillEvaluation.cs" />
+    <Compile Include="Entities\FormInquiryGoodWillScore.cs" />
+    <Compile Include="Entities\FormInquiryOther.cs" />
+    <Compile Include="Entities\FormInquiryResponse.cs" />
+    <Compile Include="Entities\FormInquiryTransferRightEvaluation.cs" />
+    <Compile Include="Entities\FormInquiryTransferRightScore.cs" />
+    <Compile Include="Entities\FormTaxBill.cs" />
+    <Compile Include="Entities\FormTaxPaymentCertificate.cs" />
+    <Compile Include="Entities\Gender.cs" />
+    <Compile Include="Entities\Hajj.cs" />
+    <Compile Include="Entities\HajjType.cs" />
+    <Compile Include="Entities\Heir.cs" />
+    <Compile Include="Entities\HeirNumber.cs" />
+    <Compile Include="Entities\Heritage.cs" />
+    <Compile Include="Entities\HomeFurnishings.cs" />
+    <Compile Include="Entities\InquiryResponse.cs" />
+    <Compile Include="Entities\Jewel.cs" />
+    <Compile Include="Entities\JusticeShares.cs" />
+    <Compile Include="Entities\Logging.cs" />
+    <Compile Include="Entities\LogTitles.cs" />
+    <Compile Include="Entities\Machinery.cs" />
+    <Compile Include="Entities\MainOffice.cs" />
+    <Compile Include="Entities\Marriage.cs" />
+    <Compile Include="Entities\MartyrProfReference.cs" />
+    <Compile Include="Entities\Nationality.cs" />
+    <Compile Include="Entities\OperatorType.cs" />
+    <Compile Include="Entities\OtherDeductions.cs" />
+    <Compile Include="Entities\OtherProperties.cs" />
+    <Compile Include="Entities\PartnershipPapers.cs" />
+    <Compile Include="Entities\PartnershipPaperType.cs" />
+    <Compile Include="Entities\PartType.cs" />
+    <Compile Include="Entities\Payment.cs" />
+    <Compile Include="Entities\Permit.cs" />
+    <Compile Include="Entities\Person.cs" />
+    <Compile Include="Entities\Phone.cs" />
+    <Compile Include="Entities\PhysicalDossierDelivery.cs" />
+    <Compile Include="Entities\PhysicalState.cs" />
+    <Compile Include="Entities\ProductionUnit.cs" />
+    <Compile Include="Entities\ProductionUnitType.cs" />
+    <Compile Include="Entities\PropertiesNumber.cs" />
+    <Compile Include="Entities\PropertyInOtherCountry.cs" />
+    <Compile Include="Entities\Province.cs" />
+    <Compile Include="Entities\Question.cs" />
+    <Compile Include="Entities\QuestionScore.cs" />
+    <Compile Include="Entities\ReDiagnosisRequest.cs" />
+    <Compile Include="Entities\RegisterInformation.cs" />
+    <Compile Include="Entities\RegisterTypes.cs" />
+    <Compile Include="Entities\RegularAnnunciationReason.cs" />
+    <Compile Include="Entities\RegularAnnunciationType.cs" />
+    <Compile Include="Entities\Relation.cs" />
+    <Compile Include="Entities\Religion_Din.cs" />
+    <Compile Include="Entities\Religion_Mazhab.cs" />
+    <Compile Include="Entities\ReligiousDebt.cs" />
+    <Compile Include="Entities\Reports.cs" />
+    <Compile Include="Entities\ReportType.cs" />
+    <Compile Include="Entities\Request.cs" />
+    <Compile Include="Entities\RequestType.cs" />
+    <Compile Include="Entities\Residence.cs" />
+    <Compile Include="Entities\RolePart.cs" />
+    <Compile Include="Entities\RolePartActivity.cs" />
+    <Compile Include="Entities\RoleType.cs" />
+    <Compile Include="Entities\SafeBox.cs" />
+    <Compile Include="Entities\Score.cs" />
+    <Compile Include="Entities\ScoreType.cs" />
+    <Compile Include="Entities\StockInOtherCompanies.cs" />
+    <Compile Include="Entities\StockProfit.cs" />
+    <Compile Include="Entities\TaxOffice.cs" />
+    <Compile Include="Entities\TaxOfficeDossierAssignMethod.cs" />
+    <Compile Include="Entities\TaxRatios.cs" />
+    <Compile Include="Entities\TransferRight.cs" />
+    <Compile Include="Entities\TransferRightType.cs" />
+    <Compile Include="Entities\Tree.cs" />
+    <Compile Include="Entities\User.cs" />
+    <Compile Include="Entities\UserDossier.cs" />
+    <Compile Include="Entities\UserTaxOfficeActivityRolePart.cs" />
+    <Compile Include="Entities\UserTaxOfficeRolePart.cs" />
+    <Compile Include="Entities\Utterer.cs" />
+    <Compile Include="Entities\UttererRole.cs" />
+    <Compile Include="Entities\WeddingIndex.cs" />
+    <Compile Include="Entities\WeddingIndex_Old.cs" />
+    <Compile Include="Entities\Well.cs" />
+    <Compile Include="Entities\WellType.cs" />
+    <Compile Include="Entities\Will.cs" />
+    <Compile Include="Entities\WillType.cs" />
+    <Compile Include="Entities\_Home.cs" />
+    <Compile Include="Forms\BankAccounts.aspx.cs">
+      <DependentUpon>BankAccounts.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Forms\BankAccounts.aspx.designer.cs">
+      <DependentUpon>BankAccounts.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\DeclarationBankAccounts.aspx.cs">
+      <DependentUpon>DeclarationBankAccounts.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Forms\DeclarationBankAccounts.aspx.designer.cs">
+      <DependentUpon>DeclarationBankAccounts.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\DossierUserAssignment.aspx.cs">
+      <DependentUpon>DossierUserAssignment.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Forms\DossierUserAssignment.aspx.designer.cs">
+      <DependentUpon>DossierUserAssignment.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\EditDead.aspx.cs">
+      <DependentUpon>EditDead.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Forms\EditDead.aspx.designer.cs">
+      <DependentUpon>EditDead.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\HeirCombination.aspx.cs">
+      <DependentUpon>HeirCombination.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Forms\HeirCombination.aspx.designer.cs">
+      <DependentUpon>HeirCombination.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\PrintPages.aspx.cs">
+      <DependentUpon>PrintPages.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Forms\PrintPages.aspx.designer.cs">
+      <DependentUpon>PrintPages.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\SelectCurrentDossier.aspx.cs">
+      <DependentUpon>SelectCurrentDossier.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Forms\SelectCurrentDossier.aspx.designer.cs">
+      <DependentUpon>SelectCurrentDossier.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Handler\ActivitiesHandler.cs" />
+    <Compile Include="Handler\AdjustmentHeritageHandler.cs" />
+    <Compile Include="Handler\AgreementTypeHandler.cs" />
+    <Compile Include="Handler\AnnunciationHandler.cs" />
+    <Compile Include="Handler\AnnunciationPaperTypeHandler.cs" />
+    <Compile Include="Handler\AnnunciationPlaceHandler.cs" />
+    <Compile Include="Handler\AnnunciationResultTypeHandler.cs" />
+    <Compile Include="Handler\AnnunciationToOthersReasonHandler.cs" />
+    <Compile Include="Handler\AnnunciationToTypeHandler.cs" />
+    <Compile Include="Handler\ApplicantHandler.cs" />
+    <Compile Include="Handler\ApplicantRoleHandler.cs" />
+    <Compile Include="Handler\ApplicationsHandler.cs" />
+    <Compile Include="Handler\BankAccountTypeHandler.cs" />
+    <Compile Include="Handler\BankCategoryHandler.cs" />
+    <Compile Include="Handler\BankDepositHandler.cs" />
+    <Compile Include="Handler\BankDepositProfitHandler.cs" />
+    <Compile Include="Handler\BankHandler.cs" />
+    <Compile Include="Handler\BankInquiryHajjHandler.cs" />
+    <Compile Include="Handler\BankTypeHandler.cs" />
+    <Compile Include="Handler\BoolFieldsTitleHandler.cs" />
+    <Compile Include="Handler\BourseStockHandler.cs" />
+    <Compile Include="Handler\CalculationTypeHandler.cs" />
+    <Compile Include="Handler\CapitalAndCommodityDepositHandler.cs" />
+    <Compile Include="Handler\CarHandler.cs" />
+    <Compile Include="Handler\CityHandler.cs" />
+    <Compile Include="Handler\CommissionAdjustmentHeritageHandler.cs" />
+    <Compile Include="Handler\CommissionInvitationHandler.cs" />
+    <Compile Include="Handler\CommissionInvitationTypeHandler.cs" />
+    <Compile Include="Handler\CommissionTypeHandler.cs" />
+    <Compile Include="Handler\CommissionVerdictHandler.cs" />
+    <Compile Include="Handler\CommissionVerdictTypeHandler.cs" />
+    <Compile Include="Handler\CompanyTypeHandler.cs" />
+    <Compile Include="Handler\ConvertLogHandler.cs" />
+    <Compile Include="Handler\CostHandler.cs" />
+    <Compile Include="Handler\CostTypeHandler.cs" />
+    <Compile Include="Handler\DaysHandler.cs" />
+    <Compile Include="Handler\DeadHandler.cs" />
+    <Compile Include="Handler\DebtsHandler.cs" />
+    <Compile Include="Handler\DebtsTypeHandler.cs" />
+    <Compile Include="Handler\DeclarationHandler.cs" />
+    <Compile Include="Handler\DeclarationTypeHandler.cs" />
+    <Compile Include="Handler\DeliveryTypeHandler.cs" />
+    <Compile Include="Handler\DemandDocumentHandler.cs" />
+    <Compile Include="Handler\DemandsHandler.cs" />
+    <Compile Include="Handler\DemandsTypeHandler.cs" />
+    <Compile Include="Handler\DictionaryHandler.cs" />
+    <Compile Include="Handler\DossierCartableHandler.cs" />
+    <Compile Include="Handler\DossierHandler.cs" />
+    <Compile Include="Handler\DowryHandler.cs" />
+    <Compile Include="Handler\EducationStateHandler.cs" />
+    <Compile Include="Handler\EntityRuleHandler.cs" />
+    <Compile Include="Handler\EstateHandler.cs" />
+    <Compile Include="Handler\EstateTypeHandler.cs" />
+    <Compile Include="Handler\FinancialRightsHandler.cs" />
+    <Compile Include="Handler\Form19Handler.cs" />
+    <Compile Include="Handler\FormCommissionInvitationHandler.cs" />
+    <Compile Include="Handler\FormDeclarationDeliveryHandler.cs" />
+    <Compile Include="Handler\FormDeclarationInputInfoHandler.cs" />
+    <Compile Include="Handler\FormDeterministicPaperHandler.cs" />
+    <Compile Include="Handler\FormDiagnosisPaperBackHandler.cs" />
+    <Compile Include="Handler\FormDiagnosisPaperHandler.cs" />
+    <Compile Include="Handler\FormDiagnosisResultHandler.cs" />
+    <Compile Include="Handler\FormFreedomHandler.cs" />
+    <Compile Include="Handler\FormHeirWithShareHandler.cs" />
+    <Compile Include="Handler\FormHeritageBillHandler.cs" />
+    <Compile Include="Handler\FormHeritageEvaluationHandler.cs" />
+    <Compile Include="Handler\FormHeritageListHandler.cs" />
+    <Compile Include="Handler\FormHeritagesDescriptionsHandler.cs" />
+    <Compile Include="Handler\FormInquiryBankDepositHandler.cs" />
+    <Compile Include="Handler\FormInquiryCompanyHandler.cs" />
+    <Compile Include="Handler\FormInquiryEstateHandler.cs" />
+    <Compile Include="Handler\FormInquiryGoodWillEvaluationHandler.cs" />
+    <Compile Include="Handler\FormInquiryGoodWillScoreHandler.cs" />
+    <Compile Include="Handler\FormInquiryOtherHandler.cs" />
+    <Compile Include="Handler\FormInquiryResponseHandler.cs" />
+    <Compile Include="Handler\FormInquiryTransferRightEvaluationHandler.cs" />
+    <Compile Include="Handler\FormInquiryTransferRightScoreHandler.cs" />
+    <Compile Include="Handler\FormTaxBillHandler.cs" />
+    <Compile Include="Handler\FormTaxPaymentCertificateHandler.cs" />
+    <Compile Include="Handler\GenderHandler.cs" />
+    <Compile Include="Handler\HajjHandler.cs" />
+    <Compile Include="Handler\HajjTypeHandler.cs" />
+    <Compile Include="Handler\HeirHandler.cs" />
+    <Compile Include="Handler\HeirNumberHandler.cs" />
+    <Compile Include="Handler\HeritageHandler.cs" />
+    <Compile Include="Handler\HomeFurnishingsHandler.cs" />
+    <Compile Include="Handler\InquiryResponseHandler.cs" />
+    <Compile Include="Handler\JewelHandler.cs" />
+    <Compile Include="Handler\JusticeSharesHandler.cs" />
+    <Compile Include="Handler\LoggingHandler.cs" />
+    <Compile Include="Handler\LogTitlesHandler.cs" />
+    <Compile Include="Handler\MachineryHandler.cs" />
+    <Compile Include="Handler\MainOfficeHandler.cs" />
+    <Compile Include="Handler\MarriageHandler.cs" />
+    <Compile Include="Handler\MartyrProfReferenceHandler.cs" />
+    <Compile Include="Handler\NationalityHandler.cs" />
+    <Compile Include="Handler\OperatorTypeHandler.cs" />
+    <Compile Include="Handler\OtherDeductionsHandler.cs" />
+    <Compile Include="Handler\OtherPropertiesHandler.cs" />
+    <Compile Include="Handler\PartnershipPapersHandler.cs" />
+    <Compile Include="Handler\PartnershipPaperTypeHandler.cs" />
+    <Compile Include="Handler\PartTypeHandler.cs" />
+    <Compile Include="Handler\PaymentHandler.cs" />
+    <Compile Include="Handler\PermitHandler.cs" />
+    <Compile Include="Handler\PersonHandler.cs" />
+    <Compile Include="Handler\PhoneHandler.cs" />
+    <Compile Include="Handler\PhysicalDossierDeliveryHandler.cs" />
+    <Compile Include="Handler\PhysicalStateHandler.cs" />
+    <Compile Include="Handler\ProductionUnitHandler.cs" />
+    <Compile Include="Handler\ProductionUnitTypeHandler.cs" />
+    <Compile Include="Handler\PropertiesNumberHandler.cs" />
+    <Compile Include="Handler\PropertyInOtherCountryHandler.cs" />
+    <Compile Include="Handler\ProvinceHandler.cs" />
+    <Compile Include="Handler\QuestionHandler.cs" />
+    <Compile Include="Handler\QuestionScoreHandler.cs" />
+    <Compile Include="Handler\ReDiagnosisRequestHandler.cs" />
+    <Compile Include="Handler\RegisterInformationHandler.cs" />
+    <Compile Include="Handler\RegisterTypesHandler.cs" />
+    <Compile Include="Handler\RegularAnnunciationReasonHandler.cs" />
+    <Compile Include="Handler\RegularAnnunciationTypeHandler.cs" />
+    <Compile Include="Handler\RelationHandler.cs" />
+    <Compile Include="Handler\Religion_DinHandler.cs" />
+    <Compile Include="Handler\Religion_MazhabHandler.cs" />
+    <Compile Include="Handler\ReligiousDebtHandler.cs" />
+    <Compile Include="Handler\ReportsHandler.cs" />
+    <Compile Include="Handler\ReportTypeHandler.cs" />
+    <Compile Include="Handler\RequestHandler.cs" />
+    <Compile Include="Handler\RequestTypeHandler.cs" />
+    <Compile Include="Handler\ResidenceHandler.cs" />
+    <Compile Include="Handler\RolePartActivityHandler.cs" />
+    <Compile Include="Handler\RolePartHandler.cs" />
+    <Compile Include="Handler\RoleTypeHandler.cs" />
+    <Compile Include="Handler\SafeBoxHandler.cs" />
+    <Compile Include="Handler\ScoreHandler.cs" />
+    <Compile Include="Handler\ScoreTypeHandler.cs" />
+    <Compile Include="Handler\StockInOtherCompaniesHandler.cs" />
+    <Compile Include="Handler\StockProfitHandler.cs" />
+    <Compile Include="Handler\TaxOfficeDossierAssignMethodHandler.cs" />
+    <Compile Include="Handler\TaxOfficeHandler.cs" />
+    <Compile Include="Handler\TaxRatiosHandler.cs" />
+    <Compile Include="Handler\TransferRightHandler.cs" />
+    <Compile Include="Handler\TransferRightTypeHandler.cs" />
+    <Compile Include="Handler\TreeHandler.cs" />
+    <Compile Include="Handler\UserDossierHandler.cs" />
+    <Compile Include="Handler\UserHandler.cs" />
+    <Compile Include="Handler\UserTaxOfficeActivityRolePartHandler.cs" />
+    <Compile Include="Handler\UserTaxOfficeRolePartHandler.cs" />
+    <Compile Include="Handler\UttererHandler.cs" />
+    <Compile Include="Handler\UttererRoleHandler.cs" />
+    <Compile Include="Handler\WeddingIndexHandler.cs" />
+    <Compile Include="Handler\WeddingIndex_OldHandler.cs" />
+    <Compile Include="Handler\WellHandler.cs" />
+    <Compile Include="Handler\WellTypeHandler.cs" />
+    <Compile Include="Handler\WillHandler.cs" />
+    <Compile Include="Handler\WillTypeHandler.cs" />
+    <Compile Include="Index.aspx.cs">
+      <DependentUpon>Index.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Index.aspx.designer.cs">
+      <DependentUpon>Index.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Login.aspx.cs">
+      <DependentUpon>Login.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Login.aspx.designer.cs">
+      <DependentUpon>Login.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Master_Page.Master.cs">
+      <DependentUpon>Master_Page.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Master_Page.Master.designer.cs">
+      <DependentUpon>Master_Page.Master</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="App_Data\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Master_Page.Master" />
+    <Content Include="App_Themes\Skin1\Skin1.skin" />
+    <Content Include="Content\bootstrap\css\bootstrap-theme.css.map" />
+    <Content Include="Content\bootstrap\css\bootstrap.css.map" />
+    <Content Include="Content\bootstrap\fonts\glyphicons-halflings-regular.eot" />
+    <Content Include="Content\bootstrap\fonts\glyphicons-halflings-regular.ttf" />
+    <Content Include="Content\bootstrap\fonts\glyphicons-halflings-regular.woff" />
+    <Content Include="Content\bootstrap\fonts\glyphicons-halflings-regular.woff2" />
+    <Content Include="Forms\first_page\fonts\codropsicons\codropsicons.eot" />
+    <Content Include="Forms\first_page\fonts\codropsicons\codropsicons.ttf" />
+    <Content Include="Forms\first_page\fonts\codropsicons\codropsicons.woff" />
+    <Content Include="Forms\first_page\img\.DS_Store" />
+    <None Include="Web.Debug.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+    <None Include="Web.Release.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+  </ItemGroup>
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(VSToolsPath)\WebApplications\Microsoft.WebApplication.targets" Condition="'$(VSToolsPath)' != ''" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" Condition="false" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>True</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>2643</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>http://localhost:4379/</IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

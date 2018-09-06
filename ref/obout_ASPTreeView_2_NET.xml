@@ -1,0 +1,264 @@
+﻿<?xml version="1.0"?>
+<doc>
+<assembly>
+<name>
+obout_ASPTreeView_2_NET
+</name>
+</assembly>
+<members>
+<member name="F:obout_ASPTreeView_2_NET.Tree.id">
+	<summary>
+ Set id of DIV element with the whole treeview inside. Default "tree1". 
+ </summary>
+	<remarks></remarks>
+</member><member name="F:obout_ASPTreeView_2_NET.Tree.Height">
+	<summary>
+ String with height value.
+ oTree.Height = "800px"
+ oTree.Height = "100%"
+ </summary>
+	<remarks></remarks>
+</member><member name="F:obout_ASPTreeView_2_NET.Tree.Width">
+	<summary>
+ String with width value.
+ oTree.Width = "200px"
+ </summary>
+	<remarks></remarks>
+</member><member name="F:obout_ASPTreeView_2_NET.Tree.Width_ScrollWider">
+	<summary>
+ String with width if you need to add horizontal scrollbar. Optional
+ Set this property wider than value in property Width. 
+ oTree.Width_ScrollWider = "500px"
+ </summary>
+	<remarks></remarks>
+</member><member name="F:obout_ASPTreeView_2_NET.Tree.SubTree">
+	<summary>
+ Set to True only if tree is dynamically loaded into main tree.
+ </summary>
+	<remarks></remarks>
+</member><member name="F:obout_ASPTreeView_2_NET.Tree.SelectedEnable">
+	<summary>
+ Set to False to disable script for selecting node. 
+ </summary>
+	<remarks></remarks>
+</member><member name="F:obout_ASPTreeView_2_NET.Tree.ShowIcons">
+	<summary>
+ When True, image icons will be shown. 
+ </summary>
+	<remarks></remarks>
+</member><member name="F:obout_ASPTreeView_2_NET.Tree.DragAndDropEnable">
+	<summary>
+ Boolean. Set True if you need Drag-and-Drop.
+ </summary>
+	<remarks></remarks>
+</member><member name="F:obout_ASPTreeView_2_NET.Tree.SelectedId">
+	<summary>
+ ID of a node to mark selected on load. 
+ </summary>
+	<remarks></remarks>
+</member><member name="F:obout_ASPTreeView_2_NET.Tree.FolderIcons">
+	<summary>
+ Path to directory with image icons.  
+ </summary>
+	<remarks></remarks>
+</member><member name="F:obout_ASPTreeView_2_NET.Tree.FolderScript">
+	<summary>
+ Path to directory with javascript files. 
+ </summary>
+	<remarks></remarks>
+</member><member name="F:obout_ASPTreeView_2_NET.Tree.FolderStyle">
+	<summary>
+ Path to directory with TreeView style (plus-minus images). 
+ </summary>
+	<remarks></remarks>
+</member><member name="F:obout_ASPTreeView_2_NET.Tree.DragDisableId">
+	<summary>
+ List node IDs with commas. These nodes will not be dragged.
+ </summary>
+	<remarks></remarks>
+</member><member name="F:obout_ASPTreeView_2_NET.Tree.DropDisableId">
+	<summary>
+ List node IDs with commas. Tree will not drop to these nodes.
+ </summary>
+	<remarks></remarks>
+</member><member name="F:obout_ASPTreeView_2_NET.Tree.EditNodeEnable">
+	<summary>
+ Boolean. Set it to true to enable the editing feature for the nodes. 
+ </summary>
+	<remarks></remarks>
+</member><member name="F:obout_ASPTreeView_2_NET.Tree.EditDisableId">
+	<summary>
+ Disable the editing for specific nodes. 
+ oTree.EditDisableId = "id81,id82,id83" 
+ </summary>
+	<remarks></remarks>
+</member><member name="F:obout_ASPTreeView_2_NET.Tree.KeyNavigationEnable">
+	<summary>
+ Boolean. Set it to true to enable the keyboard navigation feature for the nodes.
+ </summary>
+	<remarks></remarks>
+</member><member name="F:obout_ASPTreeView_2_NET.Tree.MultiSelectEnable">
+	<summary>
+ Boolean. Set to true when you need to select multiple nodes with CTRL+CLICK.
+ </summary>
+	<remarks></remarks>
+</member><member name="F:obout_ASPTreeView_2_NET.Tree.ExpandSingleEnable">
+	<summary>
+ Boolean. Set to true when you want only single node to be expanded and other sibling nodes to collapse automatically.
+ </summary>
+	<remarks></remarks>
+</member><member name="F:obout_ASPTreeView_2_NET.Tree.ShowLost">
+	<summary>
+ Boolean. Set to True and children without parents will be added to the root by default
+ </summary>
+	<remarks></remarks>
+</member><member name="F:obout_ASPTreeView_2_NET.Tree.ShowLostRed">
+	<summary>
+ Boolean. Set to True to see children nodes added before their parents in red color.
+ </summary>
+	<remarks></remarks>
+</member><member name="F:obout_ASPTreeView_2_NET.Tree.KeepLastExpanded">
+	<summary>
+ Used for keeping the state of the treeview.The last expanded nodes will be expanded automatically when the page is visited again.
+ </summary>
+	<remarks></remarks>
+</member><member name="F:obout_ASPTreeView_2_NET.Tree.KeepLastCollapsed">
+	<summary>
+ Used for keeping the state of the treeview.The last collapsed nodes will be collapsed automatically when the page is visited again.
+ </summary>
+	<remarks></remarks>
+</member><member name="F:obout_ASPTreeView_2_NET.Tree.EventList">
+	<summary>
+ String with event names. These events will be enabled.
+ oTree.EventList = "OnNodeSelect,OnNodeDrop"
+ </summary>
+	<remarks></remarks>
+</member><member name="F:obout_ASPTreeView_2_NET.Tree.SelectDisableId">
+	<summary>
+ List node IDs with commas. These nodes will not be selectable.
+ </summary>
+	<remarks></remarks>
+</member><member name="F:obout_ASPTreeView_2_NET.Tree.ShowRootPlusMinus">
+	<summary>
+ Show/hide the +/- button of the Root node.
+ </summary>
+	<remarks></remarks>
+</member><member name="F:obout_ASPTreeView_2_NET.Tree.ShowRootIcon">
+	<summary>
+ Show/hide the icon of the Root node.
+ </summary>
+	<remarks></remarks>
+</member><member name="F:obout_ASPTreeView_2_NET.Tree.SelectOnCollapse">
+	<summary>
+ If true, when the parent of the selected node is collapsed, the parent will be automatically selected. Otherwise, the selected node will keep its selected state when its parent is collapsed
+ </summary>
+	<remarks></remarks>
+</member><member name="F:obout_ASPTreeView_2_NET.Tree.ShowJSWarning">
+	<summary>
+ Enable/disable the warning message that is displayed when the JavaScript files of the TreeView are not loaded correctly.
+ </summary>
+	<remarks></remarks>
+</member><member name="M:obout_ASPTreeView_2_NET.Tree.AddRootNode(System.Object,System.Object)">
+	<summary>
+ Adds only one first root node.
+ </summary>
+	<param name="TextOrHTML">Text or HTML to display inside the node.</param>
+	<param name="ImgSrc">Name of the icon image to be displayed for the node.</param>
+	<remarks></remarks>
+</member><member name="M:obout_ASPTreeView_2_NET.Tree.AddRootNode(System.String,System.Object,System.String)">
+	<summary>
+ Adds only one first root node.
+ </summary>
+	<param name="TextOrHTML">Text or HTML to display inside the node.</param>
+	<param name="Expanded">When True, node is open on load.</param>
+	<param name="ImgSrc">Name of the icon image to be displayed for the node.</param>
+	<remarks></remarks>
+</member><member name="M:obout_ASPTreeView_2_NET.Tree.Add(System.Object,System.Object,System.Object)">
+	<summary>
+ Adds a new node
+ </summary>
+	<param name="ParentId">ID of a parent node.</param>
+	<param name="Id">ID of the node.</param>
+	<param name="TextOrHTML">Text or HTML to display inside the node.</param>
+	<remarks></remarks>
+</member><member name="M:obout_ASPTreeView_2_NET.Tree.Add(System.Object,System.Object,System.Object,System.Object)">
+	<summary>
+ Adds a new node
+ </summary>
+	<param name="ParentId">ID of a parent node.</param>
+	<param name="Id">ID of the node.</param>
+	<param name="TextOrHTML">Text or HTML to display inside the node.</param>
+	<param name="Expanded">When True, node is open on load.</param>
+	<remarks></remarks>
+</member><member name="M:obout_ASPTreeView_2_NET.Tree.Add(System.Object,System.Object,System.Object,System.Object,System.Object)">
+	<summary>
+ Adds a new node
+ </summary>
+	<param name="ParentId">ID of a parent node.</param>
+	<param name="Id">ID of the node.</param>
+	<param name="TextOrHTML">Text or HTML to display inside the node.</param>
+	<param name="Expanded">When True, node is open on load.</param>
+	<param name="ImgSrc">Name of the icon image to be displayed for the node.</param>
+	<remarks></remarks>
+</member><member name="M:obout_ASPTreeView_2_NET.Tree.Add(System.Object,System.Object,System.Object,System.Object,System.Object,System.Object)">
+	<summary>
+ Adds a new node
+ </summary>
+	<param name="ParentId">ID of a parent node.</param>
+	<param name="Id">ID of the node.</param>
+	<param name="TextOrHTML">Text or HTML to display inside the node.</param>
+	<param name="Expanded">When True, node is open on load.</param>
+	<param name="ImgSrc">Name of the icon image to be displayed for the node.</param>
+	<param name="sSubTreeURL">URL to page with tree for loading dynamically (on-demand, on-fly, etc).</param>
+	<remarks></remarks>
+</member><member name="M:obout_ASPTreeView_2_NET.Tree.Add(System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object)">
+	<summary>
+ Adds a new node
+ </summary>
+	<param name="ParentId">ID of a parent node.</param>
+	<param name="Id">ID of the node.</param>
+	<param name="TextOrHTML">Text or HTML to display inside the node.</param>
+	<param name="Expanded">When True, node is open on load.</param>
+	<param name="ImgSrc">Name of the icon image to be displayed for the node.</param>
+	<param name="sSubTreeURL">URL to page with tree for loading dynamically (on-demand, on-fly, etc).</param>
+	<param name="nodeData">an HashTable is required which may contain additional node data.</param>
+	<remarks></remarks>
+</member><member name="M:obout_ASPTreeView_2_NET.Tree.XML_WriteToFile(System.Object)">
+	<summary>
+ Write TreeView structure to an XML file
+ </summary>
+	<param name="PathFile">Absolute physical (not relative!) path to XML file to write TreeView structure to.</param>
+	<remarks></remarks>
+</member><member name="M:obout_ASPTreeView_2_NET.Tree.XML_LoadFromFile(System.Object)">
+	<summary>
+ Load TreeView structure from an XML file
+ </summary>
+	<param name="PathFile">Absolute physical (not relative!) path to XML file to load TreeView from. </param>
+	<remarks></remarks>
+</member><member name="M:obout_ASPTreeView_2_NET.Tree.XML_WriteToString">
+	<summary>
+ Put treeview in XML format to string. 
+ </summary>
+	<returns>returns the TreeView structure in a xml string. </returns>
+	<remarks></remarks>
+</member><member name="M:obout_ASPTreeView_2_NET.Tree.XML_LoadFromString(System.Object)">
+	<summary>
+ Load TreeView from XML string.
+ </summary>
+	<param name="s">The TreeView structure in a xml string.</param>
+	<remarks></remarks>
+</member><member name="M:obout_ASPTreeView_2_NET.Tree.HTML">
+	<summary>
+ Returns the entire TreeView markup. You need to render this markup in the page.
+ Ex. label1.Text=oTree.HTML()
+ </summary>
+	<returns>a string contains the TreeView markup.</returns>
+	<remarks></remarks>
+</member><member name="T:obout_ASPTreeView_2_NET.Tree">
+	<summary>
+ This library can be used to build a hierarical treeview with unbetable features.
+ </summary>
+	<remarks></remarks>
+</member>
+</members>
+</doc>

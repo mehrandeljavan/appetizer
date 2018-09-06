@@ -1,0 +1,50 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Master_Page.master.cs" Inherits="appetizer.Master_Page" %>
+
+<%@ Register Src="~/app_menu.ascx" TagPrefix="uc1" TagName="app_menu" %>
+
+
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <script src="/Content/js/jquery-1.11.2.js"></script>
+    <script src="/Content/js/jquery-ui.js"></script>
+    <script src="/Content/bootstrap/js/bootstrap.js"></script>
+    <link href="/Content/bootstrap/css/bootstrap.css" rel="stylesheet" />
+    <link href="/Content/bootstrap/css/bootstrap-theme.css" rel="stylesheet" />
+    <link href="/Content/bootstrap/css/dashboard.css" rel="stylesheet" />
+    <link href="Content/css/jquery-ui.css" rel="stylesheet" />
+    <link href="/Content/css/Site.css" rel="stylesheet" />
+    <%--<link href="Content/css/master.css" rel="stylesheet" />--%>
+    <script type="text/javascript">
+        function ShowPopup(title,message) {
+            $(function () {
+                $("#dialog").html(message);
+                $("#dialog").dialog({ title: title, buttons: { تائید: function () { $(this).dialog('close'); } }, modal: true });
+            });
+        };
+    </script>
+    <title><%= get_site_title() %></title>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body class="container" style="width:100%; margin-top:0;padding-top:0">
+     
+    <form id="form1" runat="server" class="jumbotron">
+     <asp:Panel runat="server">
+        <uc1:app_menu runat="server" id="app_menu" />
+        </asp:Panel>
+         
+    <div>
+        <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+        
+        </asp:ContentPlaceHolder>
+    </div>
+    </form>
+
+ <div id="dialog" style="display: none">
+</div>
+</body>
+    
+</html>

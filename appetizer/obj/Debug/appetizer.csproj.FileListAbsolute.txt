@@ -1,0 +1,17 @@
+E:\Projects\R & D\Mehran Amiri\appetizer\appetizer\bin\appetizer.dll
+E:\Projects\R & D\Mehran Amiri\appetizer\appetizer\bin\appetizer.pdb
+E:\Projects\R & D\Mehran Amiri\appetizer\appetizer\obj\Debug\appetizer.dll
+E:\Projects\R & D\Mehran Amiri\appetizer\appetizer\obj\Debug\appetizer.pdb
+E:\Projects\R & D\Mehran Amiri\appetizer\appetizer\obj\Debug\appetizer.csprojResolveAssemblyReference.cache
+F:\appetizer\appetizer\bin\appetizer.dll.config
+F:\appetizer\appetizer\bin\appetizer.dll
+F:\appetizer\appetizer\bin\appetizer.pdb
+F:\appetizer\appetizer\obj\Debug\appetizer.csprojResolveAssemblyReference.cache
+F:\appetizer\appetizer\obj\Debug\appetizer.dll
+F:\appetizer\appetizer\obj\Debug\appetizer.pdb
+F:\Appetizer\appetizer\appetizer\obj\Debug\appetizer.csprojResolveAssemblyReference.cache
+F:\Appetizer\appetizer\appetizer\obj\Debug\appetizer.dll
+F:\Appetizer\appetizer\appetizer\obj\Debug\appetizer.pdb
+F:\Appetizer\appetizer\appetizer\bin\appetizer.dll.config
+F:\Appetizer\appetizer\appetizer\bin\appetizer.dll
+F:\Appetizer\appetizer\appetizer\bin\appetizer.pdb
